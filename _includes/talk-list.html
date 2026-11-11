@@ -1,0 +1,7 @@
+{% comment %} Talks of one type. Usage: {% include talk-list.html type="invited" %} {% endcomment %}
+{% assign talks = site.talks | where: "type", include.type | sort: "date" | reverse %}
+<ul class="plain dated">
+{% for t in talks %}
+<li><span class="item-date">{% if t.date_display %}{{ t.date_display }}{% else %}{{ t.date | date: "%b %Y" }}{% endif %}</span><span class="item-body">&ldquo;{{ t.title }}&rdquo;<br><span class="muted">{{ t.venue }}{% if t.location %}, {{ t.location }}{% endif %}</span>{% if t.award %}<br><span class="award">{{ t.award }}</span>{% endif %}{% if t.slides %} &middot; <a href="{{ t.slides | relative_url }}">Slides</a>{% endif %}</span></li>
+{% endfor %}
+</ul>

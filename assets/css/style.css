@@ -1,0 +1,99 @@
+/* Minimal stylesheet: Times New Roman, black on white, nothing extra. */
+
+html { font-size: 18px; }
+body {
+  margin: 0;
+  background: #fff;
+  color: #111;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.5;
+}
+.site-header, main, footer {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+/* Header */
+.site-header { padding-top: 2.5rem; padding-bottom: 1.75rem; }
+.site-name { font-size: 1.6rem; color: #111; text-decoration: none; }
+nav { margin-top: 0.3rem; }
+nav a { color: #111; text-decoration: none; margin-right: 1.1rem; }
+nav a:hover, nav a.active { text-decoration: underline; text-underline-offset: 3px; }
+
+/* Text */
+a { color: #1a3a6b; }
+a:hover { color: #000; }
+h1 { font-size: 1.3rem; font-weight: normal; margin: 0 0 1rem; }
+h2 { font-size: 1.25rem; font-weight: normal; margin: 2rem 0 0.6rem; }
+h3 { font-size: 1rem; font-weight: bold; margin: 1.5rem 0 0.3rem; }
+p { margin: 0 0 1rem; }
+@media (min-width: 561px) {
+  main p { text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
+}
+.lede { font-size: 1.1rem; }
+hr.short { width: 8rem; margin: 2.25rem 0 1.25rem; border: 0; border-top: 1px solid #ccc; }
+.more { font-size: 0.9rem; }
+img { max-width: 100%; height: auto; }
+.muted { color: #555; }
+
+/* Lists: talks, news */
+.plain { list-style: none; padding: 0; margin: 0; }
+.plain > li { margin-bottom: 1rem; }
+.pub-note, .award { font-style: italic; color: #555; }
+.small { font-size: 0.85rem; }
+
+/* Publications table */
+table.pubs { border-collapse: collapse; width: 100%; margin-top: 0.5rem; }
+table.pubs th {
+  text-align: left; font-weight: normal; color: #555;
+  padding: 0 1rem 0.5rem 0; border-bottom: 1px solid #ddd;
+}
+table.pubs td { padding: 1rem 1rem 1rem 0; vertical-align: middle; line-height: 1.35; }
+table.pubs .pub-year { white-space: nowrap; }
+table.pubs .pub-authors { width: 27%; }
+table.pubs .pub-title { width: 28%; }
+table.pubs .pub-venue { width: 25%; }
+table.pubs .pub-links { white-space: nowrap; padding-right: 0; }
+table.pubs .pub-note { font-size: 0.85rem; }
+.pub-links a { text-decoration: none; margin-right: 0.25rem; }
+.pub-links a:hover { text-decoration: underline; }
+a.l-pdf { color: #3b7a8c; }
+a.l-bib { color: #4fae9b; }
+a.l-doi { color: #7a5a9e; }
+
+.dated > li { display: flex; gap: 1rem; margin-bottom: 0.7rem; }
+.item-date { flex: 0 0 5.5rem; color: #666; }
+.item-body p { margin: 0; }
+
+/* Bio page */
+.headshot { float: right; width: 130px; margin: 0.3rem 0 1rem 1.5rem; }
+table.cv { border-collapse: collapse; width: 100%; }
+table.cv td { padding: 0.15rem 1rem 0.15rem 0; vertical-align: top; }
+table.cv td:first-child { white-space: nowrap; color: #666; width: 1%; padding-right: 1.5rem; }
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
+  border-top: 1px solid #ddd;
+  font-size: 0.85rem;
+  color: #666;
+}
+footer a { color: #666; }
+
+@media (max-width: 700px) {
+  table.pubs thead { display: none; }
+  table.pubs, table.pubs tbody, table.pubs tr, table.pubs td { display: block; width: auto !important; }
+  table.pubs tr { padding: 0.8rem 0; border-bottom: 1px solid #eee; }
+  table.pubs td { padding: 0.1rem 0; }
+  table.pubs .pub-year { color: #666; }
+}
+@media (max-width: 560px) {
+  html { font-size: 17px; }
+  .dated > li { display: block; }
+  .item-date { display: block; }
+  .headshot { width: 110px; }
+}

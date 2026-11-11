@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% seo %}
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+<header class="site-header">
+<a class="site-name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+<nav>
+{% for item in site.data.navigation.main %}<a href="{{ item.url | relative_url }}"{% if page.url == item.url %} class="active"{% endif %}>{{ item.title }}</a>
+{% endfor %}
+</nav>
+</header>
+<main>
+{% if page.title and page.hide_title != true %}<h1>{{ page.title }}</h1>
+{% endif %}
+{{ content }}
+</main>
+<footer>
+{{ site.email_text }} &middot; <a href="https://orcid.org/{{ site.orcid }}">ORCID</a>{% if site.github %} &middot; <a href="https://github.com/{{ site.github }}">GitHub</a>{% endif %} &middot; <a href="{{ site.cv_pdf | relative_url }}">CV (PDF)</a>
+</footer>
+</body>
+</html>

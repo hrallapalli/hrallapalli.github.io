@@ -1,0 +1,48 @@
+# Site settings for Hari Rallapalli's academic website (hrallapalli.github.io)
+# Plain Jekyll with a small custom layout (_layouts/default.html) and one
+# stylesheet (assets/css/style.css). GitHub Pages builds it automatically.
+
+title: "Hari Rallapalli"
+description: "Hari Rallapalli, PhD: genetically encoded MRI contrast (Zip14 / MAGIC MRI) at the NIH."
+url: "https://hrallapalli.github.io"
+baseurl: ""
+lang: en
+
+# Shown in the footer and on the Bio page
+email_text: "hari (dot) rallapalli (at) gmail (dot) com"   # plain text on purpose, not a mailto link
+orcid: "0009-0008-7625-6682"
+# github: "hrallapalli"   # uncomment to show a GitHub link in the footer
+cv_pdf: "/files/Hari_Rallapalli_CV.pdf"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+
+include:
+  - _pages
+
+collections:
+  publications:   # one Markdown file per paper
+    output: false
+  talks:          # one Markdown file per talk (type: invited | conference)
+    output: false
+  news:           # one Markdown file per news item
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+markdown: kramdown
+kramdown:
+  input: GFM
+timezone: America/New_York
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap

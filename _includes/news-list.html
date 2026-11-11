@@ -1,0 +1,8 @@
+{% comment %} News list. Usage: {% include news-list.html %} (optionally limit=5) {% endcomment %}
+{% assign items = site.news | sort: "date" | reverse %}
+{% if include.limit %}{% assign n = include.limit %}{% else %}{% assign n = items.size %}{% endif %}
+<ul class="plain dated">
+{% for item in items limit: n %}
+<li><span class="item-date">{% if item.date_display %}{{ item.date_display }}{% else %}{{ item.date | date: "%b %Y" }}{% endif %}</span><span class="item-body">{{ item.content | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span></li>
+{% endfor %}
+</ul>
