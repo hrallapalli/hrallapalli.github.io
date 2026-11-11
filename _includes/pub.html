@@ -10,5 +10,5 @@
 <td class="pub-authors">{{ p.authors | replace: "Rallapalli H", "<strong>Rallapalli H</strong>" }}</td>
 <td class="pub-title">{{ p.title }}{% if p.note %}<br><span class="pub-note">{{ p.note }}</span>{% endif %}</td>
 <td class="pub-venue">{{ p.venue }}{% if p.details %}, {{ p.details }}{% endif %}{% if p.status %}. {{ p.status }}{% endif %}.</td>
-<td class="pub-links">{% if pub_pdf %}<a class="l-pdf" href="{{ pub_pdf }}">[pdf]</a> {% endif %}{% if p.bib %}<a class="l-bib" href="{{ p.bib | relative_url }}">[bib]</a> {% endif %}{% if pub_link %}<a class="l-doi" href="{{ pub_link }}">[doi]</a>{% endif %}{% if p.code %} <a class="l-doi" href="{{ p.code }}">[code]</a>{% endif %}</td>
+<td class="pub-links">{% if pub_pdf %}<a class="l-pdf" href="{{ pub_pdf }}" target="_blank" rel="noopener">[pdf]</a> {% endif %}{% if p.bib %}<a class="l-bib" href="{{ p.bib | relative_url }}" target="_blank" rel="noopener">[bib]</a> {% endif %}{% if pub_link %}<a class="l-doi" href="{{ pub_link }}" target="_blank" rel="noopener">[doi]</a>{% endif %}{% if p.code %} <a class="l-doi" href="{{ p.code }}" target="_blank" rel="noopener">[code]</a>{% endif %}</td>
 </tr>
