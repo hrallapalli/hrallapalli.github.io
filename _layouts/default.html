@@ -22,5 +22,13 @@
 <footer>
 {{ site.email_text }} &middot; <a href="https://orcid.org/{{ site.orcid }}">ORCID</a>{% if site.github %} &middot; <a href="https://github.com/{{ site.github }}">GitHub</a>{% endif %} &middot; <a href="{{ site.cv_pdf | relative_url }}">CV (PDF)</a>
 </footer>
+<script>
+/* Open external links and files (PDF, BibTeX) in a new tab; keep site pages in the same tab. */
+document.querySelectorAll('a[href]').forEach(function (a) {
+  var external = a.hostname && a.hostname !== location.hostname;
+  var file = /\.(pdf|bib)$/i.test(a.pathname);
+  if (external || file) { a.target = '_blank'; a.rel = 'noopener'; }
+});
+</script>
 </body>
 </html>
