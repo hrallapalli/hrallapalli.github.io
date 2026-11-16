@@ -30,9 +30,48 @@ document.querySelectorAll('a[href]').forEach(function (a) {
   if (external || file) { a.target = '_blank'; a.rel = 'noopener'; }
 });
 /* Respect reduced-motion settings: show the still frame instead of the animation. */
-if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (reduceMotion) {
   document.querySelectorAll('video[autoplay]').forEach(function (v) { v.removeAttribute('autoplay'); v.pause(); });
 }
+/* Click (or press Enter on) a figure or video to view it at full resolution; click or Esc to close. */
+document.querySelectorAll('main figure img, main figure video').forEach(function (el) {
+  el.classList.add('zoomable');
+  el.setAttribute('tabindex', '0');
+  el.setAttribute('role', 'button');
+  el.setAttribute('aria-label', (el.getAttribute('alt') || el.getAttribute('aria-label') || 'Figure') + ' (enlarge)');
+  function open() {
+    var small = el.currentSrc || el.src || (el.querySelector('source') || {}).src;
+    var full = el.getAttribute('data-full') || small;
+    var ov = document.createElement('div');
+    ov.className = 'lightbox';
+    var m;
+    if (el.tagName === 'VIDEO') {
+      m = document.createElement('video');
+      m.muted = true; m.loop = true; m.setAttribute('playsinline', '');
+      if (reduceMotion) { m.controls = true; } else { m.autoplay = true; }
+    } else {
+      m = document.createElement('img');
+      m.alt = el.getAttribute('alt') || '';
+    }
+    m.onerror = function () { if (small && m.src !== small) { m.src = small; } };
+    m.src = full;
+    ov.appendChild(m);
+    document.body.appendChild(ov);
+    document.body.style.overflow = 'hidden';
+    function close() {
+      ov.remove(); document.body.style.overflow = '';
+      document.removeEventListener('keydown', key); el.focus();
+    }
+    function key(e) { if (e.key === 'Escape') { close(); } }
+    ov.addEventListener('click', close);
+    document.addEventListener('keydown', key);
+  }
+  el.addEventListener('click', open);
+  el.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); }
+  });
+});
 </script>
 </body>
 </html>
