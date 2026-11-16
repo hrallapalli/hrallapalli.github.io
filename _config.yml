@@ -27,9 +27,7 @@ include:
 collections:
   publications:   # one Markdown file per paper
     output: false
-  talks:          # one Markdown file per talk (type: invited | conference)
-    output: false
-  news:           # one Markdown file per news item
+  news:           # one Markdown file per news item (including invited talks)
     output: false
 
 defaults:

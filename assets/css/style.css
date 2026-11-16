@@ -67,8 +67,17 @@ a.l-doi { color: #7a5a9e; }
 .item-date { flex: 0 0 5.5rem; color: #666; }
 .item-body p { margin: 0; }
 
+/* Research figures */
+figure { margin: 1.25rem 0 2.25rem; max-width: 30rem; }
+figure img { display: block; width: 100%; height: auto; }
+figure.fig-narrow { max-width: 22rem; }
+figure.fig-wide { max-width: 38rem; }
+figcaption { font-size: 0.85rem; color: #666; margin-top: 0.45rem; }
+sup { font-size: 0.7em; line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; }
+sup a { text-decoration: none; }
+
 /* Bio page */
-.headshot { float: right; width: 130px; margin: 0.3rem 0 1rem 1.5rem; }
+.headshot { display: block; width: 150px; margin: 0 0 1.5rem; }
 table.cv { border-collapse: collapse; width: 100%; }
 table.cv td { padding: 0.15rem 1rem 0.15rem 0; vertical-align: top; }
 table.cv td:first-child { white-space: nowrap; color: #666; width: 1%; padding-right: 1.5rem; }
