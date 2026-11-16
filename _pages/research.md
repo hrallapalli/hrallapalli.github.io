@@ -7,7 +7,7 @@ hide_title: true
 <p class="lede">My research program is focused on developing imaging tools to report biological function in living subjects.</p>
 
 <div class="fig-row fig-top">
-<figure class="fig-right fig-magic"><img src="/assets/images/research/magic.jpg" alt="Schematic of AAV delivery of Syn-Zip14 to the caudate putamen, with MAGIC MRI and Zip14 histology in serial coronal sections of the mouse brain" loading="lazy"></figure>
+<figure class="fig-right fig-magic fig-video"><video autoplay muted loop playsinline preload="auto" poster="/assets/images/research/magic-rotation-poster.jpg" aria-label="Rotating 3D rendering of a mouse brain showing MAGIC MRI signal"><source src="/assets/videos/magic-rotation.mp4" type="video/mp4"></video></figure>
 <h2>MRI-visible expression reporters for translational molecular imaging</h2>
 <p>We are at the threshold of detecting gene expression, cell function, and disease state in living subjects over the whole organism using molecular MRI. I discovered that the manganese (Mn<sup>2+</sup>) transport protein Zip14 can be applied as a robust MRI-visible gene expression reporter (i.e., GFP for MRI) to enable mesoscale neural tracing in vivo. I call this system Manganese Accumulation for Genetically Inducible Contrast (MAGIC) MRI.<sup><a href="https://doi.org/10.64898/2026.04.30.722028">1</a>,<a href="https://doi.org/10.1002/mrm.29993">2</a></sup></p>
 </div>
