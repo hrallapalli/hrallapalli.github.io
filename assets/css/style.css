@@ -74,7 +74,7 @@ figure img { display: block; width: 100%; height: auto; }
 .fig-row { display: flow-root; margin-bottom: 0.5rem; }
 .fig-row p { margin-top: 0; }
 /* Aim blocks: the figure starts level with the aim title */
-.fig-top { margin-top: 1.6rem; }
+.fig-top { margin-top: 2.5rem; }
 .fig-top h2 { clear: none; margin-top: 0; }
 .fig-top figure.fig-right { margin-top: -1.5rem; margin-bottom: 0; }
 figure.fig-right { float: right; width: 30rem; max-width: 50%; margin: 0.25rem 0 0.5rem 1.75rem; }

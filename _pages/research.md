@@ -4,7 +4,7 @@ title: "Research"
 hide_title: true
 ---
 
-<p class="lede">My research program exists at the intersection between engineering, molecular biology, and biophysics and is focused on developing imaging tools to report biological function in living subjects.</p>
+<p class="lede">My research program is focused on developing imaging tools to report biological function in living subjects.</p>
 
 <div class="fig-row fig-top">
 <figure class="fig-right fig-magic"><img src="/assets/images/research/magic.jpg" alt="Schematic of AAV delivery of Syn-Zip14 to the caudate putamen, with MAGIC MRI and Zip14 histology in serial coronal sections of the mouse brain" loading="lazy"></figure>
