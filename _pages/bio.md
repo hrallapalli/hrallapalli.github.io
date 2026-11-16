@@ -2,11 +2,11 @@
 permalink: /bio/
 title: "Bio"
 ---
-<img class="headshot" src="{{ '/assets/images/hari-rallapalli.jpg' | relative_url }}" alt="Hari Rallapalli">
+<img class="headshot" src="/assets/images/hari-rallapalli.jpg" alt="Hari Rallapalli">
 
 I am currently a postdoctoral Research Fellow in the Section on Plasticity and Imaging of the Nervous System at the NINDS/NIH, working with Dr. Alan Koretsky. I am the recipient of an NIBIB/NIH K99/R00 Pathway to Independence Award, have filed a patent application on the technology developed from my current research, and have mentored nine students. I received my Ph.D. in Biomedical Science from New York University with Dr. Daniel Turnbull, and my B.S. in Biomedical Engineering from the University of California, Davis. I began my research career as a student in Dr. Sam Gambhir's laboratory at Stanford University.
 
-My laboratory will develop MAGIC into a platform for reporting gene expression in living subjects. Gene and RNA therapies are dosed without knowing how much reached the target. MAGIC answers the question in the same subject, repeatedly, on clinical hardware. I will push its detection limit with AI/ML and calibrate signal against expressing-cell number, so an image reads as an expression level. I will use MAGIC to guide dosing in a disease model with a narrow therapeutic window. I will also engineer MAGIC agents gated on a chosen transcript, so the image reports function as well as location.
+My laboratory will develop MAGIC into a broadly useful platform technology. MAGIC is genetically encoded and MRI sensitivity is unlimited by tissue depth, enabling monitoring of how neural connectivity forms, adapts to experience, or breaks down in disease by tracing the same circuits in one subject&rsquo;s brain over time. On the translational side, my mission is to establish MAGIC as an engineered biomarker for the delivery, efficacious expression, and redosing timing of next-generation gene therapies. The high resolution and robust signal change afforded by MAGIC give potential for detecting subtle changes in expression level. I will train AI/ML models on a curated cohort of control brains to detect MAGIC even when the signal changes are near the noise floor. Many other proteins maintain manganese homeostasis in humans, and just as the fluorescent protein palette expanded optical imaging, I will engineer these transporters into a suite of MAGIC reporters.
 
 ## Positions
 

@@ -67,17 +67,20 @@ a.l-doi { color: #7a5a9e; }
 .item-date { flex: 0 0 5.5rem; color: #666; }
 .item-body p { margin: 0; }
 
-/* Research figures */
-figure { margin: 1.25rem 0 2.25rem; max-width: 30rem; }
+/* Research figures: small; most float to the right of their text */
+h2 { clear: both; }
+figure { margin: 0.75rem 0 1.75rem; }
 figure img { display: block; width: 100%; height: auto; }
-figure.fig-narrow { max-width: 22rem; }
-figure.fig-wide { max-width: 38rem; }
-figcaption { font-size: 0.85rem; color: #666; margin-top: 0.45rem; }
+.fig-row { display: flow-root; margin-bottom: 1rem; }
+.fig-row p { margin-top: 0; }
+figure.fig-right { float: right; width: 30rem; max-width: 50%; margin: 0.25rem 0 0.75rem 1.75rem; }
+figure.fig-magic { width: 18rem; }
+figure.fig-strip { max-width: 38rem; }
 sup { font-size: 0.7em; line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; }
 sup a { text-decoration: none; }
 
 /* Bio page */
-.headshot { display: block; width: 150px; margin: 0 0 1.5rem; }
+.headshot { float: right; width: 150px; margin: 0.25rem 0 1rem 1.75rem; }
 table.cv { border-collapse: collapse; width: 100%; }
 table.cv td { padding: 0.15rem 1rem 0.15rem 0; vertical-align: top; }
 table.cv td:first-child { white-space: nowrap; color: #666; width: 1%; padding-right: 1.5rem; }
@@ -105,4 +108,5 @@ footer a { color: #666; }
   .dated > li { display: block; }
   .item-date { display: block; }
   .headshot { width: 110px; }
+  figure.fig-right, figure.fig-magic { float: none; width: auto; max-width: 100%; margin: 0 0 1rem; }
 }
