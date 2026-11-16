@@ -6,10 +6,9 @@ hide_title: true
 
 <p class="lede">My research program exists at the intersection between engineering, molecular biology, and biophysics and is focused on developing imaging tools to report biological function in living subjects.</p>
 
-## MRI-visible expression reporters for translational molecular imaging
-
-<div class="fig-row">
+<div class="fig-row fig-top">
 <figure class="fig-right fig-magic"><img src="/assets/images/research/magic.jpg" alt="Schematic of AAV delivery of Syn-Zip14 to the caudate putamen, with MAGIC MRI and Zip14 histology in serial coronal sections of the mouse brain" loading="lazy"></figure>
+<h2>MRI-visible expression reporters for translational molecular imaging</h2>
 <p>We are at the threshold of detecting gene expression, cell function, and disease state in living subjects over the whole organism using molecular MRI. I discovered that the manganese (Mn<sup>2+</sup>) transport protein Zip14 can be applied as a robust MRI-visible gene expression reporter (i.e., GFP for MRI) to enable mesoscale neural tracing in vivo. I call this system Manganese Accumulation for Genetically Inducible Contrast (MAGIC) MRI.<sup><a href="https://doi.org/10.64898/2026.04.30.722028">1</a>,<a href="https://doi.org/10.1002/mrm.29993">2</a></sup></p>
 </div>
 
@@ -19,7 +18,7 @@ hide_title: true
 
 <figure class="fig-strip"><img src="/assets/images/research/cellular-resolution.jpg" alt="In vivo MEMRI of the mouse cerebellum at 100, 80, and 50 µm isotropic and 50 and 30 µm in-plane resolution" loading="lazy"></figure>
 
-## High-throughput screening pipelines for mouse models of human medulloblastoma and Niemann-Pick Type C
+## High-throughput screening pipelines for mouse models of human neurological disorders
 
 <div class="fig-row">
 <figure class="fig-right"><img src="/assets/images/research/medulloblastoma.jpg" alt="Longitudinal MEMRI of a mouse model of medulloblastoma at 3, 8, and 13 weeks of age, with arrows marking the cerebellum and tumor" loading="lazy"></figure>
